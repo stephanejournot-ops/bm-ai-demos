@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Batmaid AI – Test Assistant</title>
+
+    <!-- Load Vapi widget client -->
+    <script
+      src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
+      async
+      type="text/javascript"
+    ></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        padding: 40px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+        color: #555;
+      }
+      #vapi-widget {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Batmaid AI – Test Assistant</h1>
+    <p>Click the widget button in the bottom-right corner to start testing.</p>
+
+    <div id="vapi-widget"></div>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        new window.VapiWidget({
+          assistantId: "60256fe6-91e7-499f-a30d-3ca23fc92910",
+          apiKey: "9cb68a0e-4f13-4248-9896-82485a7f87aa"
+        });
+      });
+    </script>
+  </body>
+</html>
